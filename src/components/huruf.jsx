@@ -29,10 +29,10 @@ const App = () => {
       <View style={styles.promotions}>
         <Text style={styles.sectionTitle}>Promosi</Text>
         <View style={styles.promoIcons}>
-          <Image source={{ uri: 'icon-url' }} style={styles.icon} />
-          <Image source={{ uri: 'icon-url' }} style={styles.icon} />
-          <Image source={{ uri: 'icon-url' }} style={styles.icon} />
-          <Image source={{ uri: 'icon-url' }} style={styles.icon} />
+          <Image source={{ uri: 'https://images.unsplash.com/photo-1508973379184-7517410fb0bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
+          <Image source={{ uri: 'https://images.unsplash.com/photo-1713864006315-94b5e7f2729e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
+          <Image source={{ uri: 'https://images.unsplash.com/photo-1713864006347-7361bc6b10b8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
+          <Image source={{ uri: 'https://images.unsplash.com/photo-1508973379184-7517410fb0bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
         </View>
       </View>
       <View style={styles.booksSection}>
@@ -51,7 +51,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#f0f5f9',
     paddingHorizontal: 10,
   },
   header: {
@@ -71,21 +71,28 @@ const styles = StyleSheet.create({
     marginVertical: 20,
   },
   title: {
-    color: '#000',
+    color: '#0056b3',
     fontSize: 25,
+    fontWeight: 'bold',
   },
   searchBox: {
-    backgroundColor: '#ccc',
+    backgroundColor: '#e3f2fd',
     borderRadius: 5,
     padding: 10,
     marginTop: 10,
+    elevation: 3, // shadow for Android
+    shadowColor: '#000', // shadow for iOS
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.3,
+    shadowRadius: 2,
   },
   promotions: {
     marginVertical: 20,
   },
   sectionTitle: {
-    color: '#000',
+    color: '#0056b3',
     fontSize: 20,
+    fontWeight: 'bold',
   },
   promoIcons: {
     flexDirection: 'row',
@@ -95,6 +102,7 @@ const styles = StyleSheet.create({
   icon: {
     width: 50,
     height: 50,
+    borderRadius: 5,
   },
   booksSection: {
     marginVertical: 20,
@@ -107,14 +115,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#e3f2fd',
+    elevation: 1, // shadow for Android
+    shadowColor: '#000', // shadow for iOS
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.2,
+    shadowRadius: 2,
   },
   bookTitle: {
-    color: '#000',
+    color: '#0056b3',
     fontSize: 18,
   },
   bookPrice: {
-    color: '#ff8c00',
+    color: '#ff6f00',
+    fontWeight: 'bold',
   },
 });
 

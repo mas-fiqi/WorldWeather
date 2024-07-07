@@ -23,7 +23,9 @@ const App = () => {
         </View>
       </View>
       <View style={styles.searchSection}>
-        <Text style={styles.title}>Nada dering</Text>
+        <View style={styles.titleContainer}>
+          <Text style={styles.title}>Nada dering</Text>
+        </View>
         <TouchableOpacity style={styles.localRingtone}>
           <Text style={styles.localRingtoneText}>Pilih nada dering lokal</Text>
         </TouchableOpacity>
@@ -33,8 +35,8 @@ const App = () => {
         <View style={styles.promoIcons}>
           <Image source={{ uri: 'bigo-image-url' }} style={styles.icon} />
           <Image source={{ uri: 'easycash-image-url' }} style={styles.icon} />
-          <Image source={{ uri: 'control-center-image-url' }} style={styles.icon} />
-          <Image source={{ uri: 'lark-player-image-url' }} style={styles.icon} />
+          <Image source={{ uri: 'https://images.unsplash.com/photo-1516315973067-166cf84425bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
+          <Image source={{ uri: 'https://images.unsplash.com/photo-1485278537138-4e8911a13c02?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
         </View>
       </View>
       <View style={styles.genreSection}>
@@ -85,18 +87,26 @@ const styles = StyleSheet.create({
   searchSection: {
     marginVertical: 20,
   },
+  titleContainer: {
+    alignItems: 'center',
+    marginBottom: 10,
+  },
   title: {
     color: '#000',
     fontSize: 25,
+    backgroundColor: '#ffd700',
+    paddingHorizontal: 20,
+    paddingVertical: 5,
+    borderRadius: 5,
   },
   localRingtone: {
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#ffe4b5',
     borderRadius: 5,
     padding: 10,
     marginTop: 10,
   },
   localRingtoneText: {
-    color: '#f08c00',
+    color: '#ff8c00',
     fontSize: 16,
   },
   promotions: {
@@ -125,7 +135,7 @@ const styles = StyleSheet.create({
   },
   genreItem: {
     width: '48%',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#ffdab9',
     borderRadius: 5,
     padding: 10,
     marginVertical: 5,
@@ -151,7 +161,7 @@ const styles = StyleSheet.create({
   },
   favoriteItem: {
     width: '48%',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#ffb6c1',
     borderRadius: 5,
     padding: 10,
     marginVertical: 5,

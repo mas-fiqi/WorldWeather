@@ -20,7 +20,7 @@ const WallpaperScreen = () => {
 
       {/* Categories */}
       <View style={styles.categories}>
-        {['Kategori', 'Terbaru', 'Alam', 'Karakter', 'Top'].map((category) => (
+        {['Tema', 'Huruf', 'Nada', 'Home', ].map((category) => (
           <View key={category} style={styles.category}>
             <Text>{category}</Text>
           </View>
