@@ -34,7 +34,7 @@ const App = () => {
         <Text style={styles.sectionTitle}>Promosi</Text>
         <View style={styles.promoIcons}>
           <Image source={{ uri: 'bigo-image-url' }} style={styles.icon} />
-          <Image source={{ uri: 'easycash-image-url' }} style={styles.icon} />
+          <Image source={{ uri: 'https://images.unsplash.com/photo-1520166012956-add9ba0835cb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
           <Image source={{ uri: 'https://images.unsplash.com/photo-1516315973067-166cf84425bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
           <Image source={{ uri: 'https://images.unsplash.com/photo-1485278537138-4e8911a13c02?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
         </View>
