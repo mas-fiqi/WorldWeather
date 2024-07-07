@@ -3,15 +3,15 @@ import { View, Text, ScrollView, StyleSheet, Image, TouchableOpacity } from 'rea
 
 const App = () => {
   const genres = [
-    { name: 'EDM', image: 'edm-image-url' },
-    { name: 'Hip-Hop', image: 'hiphop-image-url' },
-    { name: 'Rock', image: 'rock-image-url' },
-    { name: 'Jazz', image: 'jazz-image-url' },
+    { name: 'EDM', image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { name: 'Hip-Hop', image: 'https://images.unsplash.com/photo-1520166012956-add9ba0835cb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { name: 'Rock', image: 'https://images.unsplash.com/photo-1516315973067-166cf84425bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { name: 'Jazz', image: 'https://images.unsplash.com/photo-1485278537138-4e8911a13c02?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
   ];
 
   const favoriteRingtones = [
-    { name: 'Dibuat Untuk Anda', image: 'custom-image-url' },
-    { name: 'Kilas Balik Retro', image: 'retro-image-url' },
+    { name: 'Dibuat Untuk Anda', image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { name: 'Kilas Balik Retro', image: 'https://images.unsplash.com/photo-1520166012956-add9ba0835cb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
   ];
 
   return (
@@ -33,7 +33,7 @@ const App = () => {
       <View style={styles.promotions}>
         <Text style={styles.sectionTitle}>Promosi</Text>
         <View style={styles.promoIcons}>
-          <Image source={{ uri: 'bigo-image-url' }} style={styles.icon} />
+          <Image source={{ uri: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
           <Image source={{ uri: 'https://images.unsplash.com/photo-1520166012956-add9ba0835cb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
           <Image source={{ uri: 'https://images.unsplash.com/photo-1516315973067-166cf84425bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />
           <Image source={{ uri: 'https://images.unsplash.com/photo-1485278537138-4e8911a13c02?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.icon} />

@@ -39,7 +39,9 @@ const App = () => {
         <Text style={styles.sectionTitle}>Buku Terlaris di Indonesia</Text>
         {books.map((book, index) => (
           <TouchableOpacity key={index} style={styles.bookItem}>
-            <Text style={styles.bookTitle}>{book.title}</Text>
+            <Text style={styles.bookTitle}>{book.title.split(' ').map((word, i) => (
+              <Text key={i} style={{ fontFamily: i % 2 === 0 ? 'Arial' : 'Times New Roman' }}>{word}</Text>
+            ))}</Text>
             <Text style={styles.bookPrice}>{book.price}</Text>
           </TouchableOpacity>
         ))}
